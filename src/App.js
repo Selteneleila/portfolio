@@ -3,7 +3,7 @@ import AboutMe from "./components/AboutMe";
 import Banner from "./components/Banner";
 import Education from "./components/Education";
 import Projects from "./components/Projects";
-import Skills from "./components/Skills";
+import Skills from "./components/skills/Skills";
 
 function App() {
   return (

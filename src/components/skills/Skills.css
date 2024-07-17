@@ -1,0 +1,27 @@
+/* Skills.css */
+.skill-box {
+  text-align: center;
+}
+
+.skill-box h2 {
+  margin-bottom: 20px;
+}
+
+.skill-box p {
+  margin-bottom: 30px;
+}
+
+.skill-slider .item {
+  padding: 10px;
+  text-align: center;
+}
+
+.skill-slider .item img {
+  max-width: 80px;
+  margin-bottom: 10px;
+}
+
+.skill-slider .item h5 {
+  font-size: 16px;
+  margin: 0;
+}
