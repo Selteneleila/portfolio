@@ -3,18 +3,26 @@ import { Paper, Typography } from "@mui/material";
 
 export default function AboutMe() {
   return (
-    <Paper elevation={3} style={{ padding: "2rem", margin: "2rem" }}>
-      <Typography sx={{ fontSize: 14 }}>
-        Adipisicing sit irure ex veniam duis proident voluptate sint
-        exercitation esse Lorem irure occaecat. Sit ea labore cupidatat magna
-        commodo ea consectetur consequat. Duis exercitation qui elit officia
-        aute. Minim sint do id amet elit excepteur id. Deserunt officia
-        exercitation sunt pariatur do exercitation pariatur anim officia
-        cupidatat eu in dolore. Elit aliqua laboris ad sint incididunt aliquip
-        et enim incididunt dolore proident amet ad. Aute cillum quis laboris
-        laborum nulla reprehenderit consequat nisi culpa. Labore ex incididunt
-        pariatur enim irure nostrud ea consequat pariatur dolor nisi
-        reprehenderit cillum amet. Commodo ut excepteur dolore officia.
+    <Paper
+      elevation={3}
+      style={{ padding: "2rem", margin: "2rem", background: "#0b001d" }}
+    >
+      <Typography sx={{ fontSize: 14, color: "white" }}>
+        Ex id aute sunt dolor excepteur excepteur consectetur fugiat fugiat
+        labore.Cupidatat excepteur sunt esse exercitation consequat ullamco
+        culpa consectetur dolore commodo consectetur est enim id. Fugiat sint
+        magna cupidatat ex magna sit Lorem duis amet ad. Est consequat aute
+        nulla aute eiusmod pariatur ullamco enim ipsum id reprehenderit irure
+        pariatur esse. Do dolor deserunt pariatur non dolore ipsum ipsum veniam
+        esse in culpa nulla anim officia. Nostrud esse ut et amet deserunt
+        laboris proident sit ullamco magna ipsum laboris tempor. Aliqua et ad
+        nostrud veniam sit. Officia culpa consequat consectetur quis irure
+        occaecat consectetur aute enim reprehenderit exercitation nisi. Labore
+        ipsum Lorem ex cillum. Excepteur id nulla sint reprehenderit velit velit
+        adipisicing laborum ipsum sint dolore. Exercitation dolore in
+        exercitation veniam sint. Aliqua ipsum duis cillum veniam sunt esse.
+        Dolore sit eiusmod ut occaecat do ea ullamco officia cupidatat dolore
+        aliquip magna proident.
       </Typography>
     </Paper>
   );

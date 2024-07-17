@@ -15,9 +15,7 @@ export default function Education() {
       <h4>Education</h4>
       <Timeline position="alternate">
         <TimelineItem>
-          <TimelineOppositeContent color="text.secondary">
-            2023
-          </TimelineOppositeContent>
+          <TimelineOppositeContent color="white">2023</TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot />
             <TimelineConnector />
@@ -28,7 +26,7 @@ export default function Education() {
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>
-          <TimelineOppositeContent color="text.secondary">
+          <TimelineOppositeContent color="white">
             Bachelor's Degree in English Language, Literature and Civilization
           </TimelineOppositeContent>
           <TimelineDot />
