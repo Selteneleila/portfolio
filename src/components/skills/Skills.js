@@ -1,28 +1,60 @@
 import React from "react";
-import ReactLogo from "../../assets/react.svg";
-import ReduxLogo from "../../assets/redux.svg";
-import CssLogo from "../../assets/css.svg";
-import JavaLogo from "../../assets/java.svg";
-import JsLogo from "../../assets/js.svg";
-import HtmlLogo from "../../assets/html.svg";
-import PythonLogo from "../../assets/python.svg";
-import MongoLogo from "../../assets/mongo.svg";
+import ReactLogoBW from "../../assets/skillsLogos/bw/react.svg";
+import ReduxLogoBW from "../../assets/skillsLogos/bw/redux.svg";
+import CssLogoBW from "../../assets/skillsLogos/bw/css.svg";
+import JavaLogoBW from "../../assets/skillsLogos/bw/java.svg";
+import JsLogoBW from "../../assets/skillsLogos/bw/js.svg";
+import HtmlLogoBW from "../../assets/skillsLogos/bw/html.svg";
+import PythonLogoBW from "../../assets/skillsLogos/bw/python.svg";
+import MongoLogoBW from "../../assets/skillsLogos/bw/mongo.svg";
+import ReactLogoColor from "../../assets/skillsLogos/color/react.svg";
+import ReduxLogoColor from "../../assets/skillsLogos/color/redux.svg";
+import CssLogoColor from "../../assets/skillsLogos/color/css.svg";
+import JavaLogoColor from "../../assets/skillsLogos/color/java.svg";
+import JsLogoColor from "../../assets/skillsLogos/color/js.svg";
+import HtmlLogoColor from "../../assets/skillsLogos/color/html.svg";
+import PythonLogoColor from "../../assets/skillsLogos/color/python.svg";
+import MongoLogoColor from "../../assets/skillsLogos/color/mongo.svg";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { Col, Container, Row } from "react-bootstrap";
-import "./Skills.css";
-import { Paper } from "@mui/material";
+import "./skills.css";
+import { Typography } from "@mui/material";
+import { Box } from "@mui/system";
 
 const logos = [
-  { src: ReactLogo, alt: "React logo", name: "React Js" },
-  { src: ReactLogo, alt: "React logo", name: "React Native" },
-  { src: ReduxLogo, alt: "Redux logo", name: "React Redux" },
-  { src: HtmlLogo, alt: "HTML logo", name: "HTML" },
-  { src: CssLogo, alt: "CSS logo", name: "CSS" },
-  { src: JsLogo, alt: "JavaScript logo", name: "JavaScript" },
-  { src: MongoLogo, alt: "MongoDB logo", name: "MongoDB" },
-  { src: JavaLogo, alt: "Java logo", name: "Java" },
-  { src: PythonLogo, alt: "Python logo", name: "Python" },
+  {
+    src: ReactLogoBW,
+    hoverSrc: ReactLogoColor,
+    alt: "React logo",
+    name: "React Js + Native",
+  },
+  {
+    src: ReduxLogoBW,
+    hoverSrc: ReduxLogoColor,
+    alt: "Redux logo",
+    name: "React Redux",
+  },
+  { src: HtmlLogoBW, hoverSrc: HtmlLogoColor, alt: "HTML logo", name: "HTML" },
+  { src: CssLogoBW, hoverSrc: CssLogoColor, alt: "CSS logo", name: "CSS" },
+  {
+    src: JsLogoBW,
+    hoverSrc: JsLogoColor,
+    alt: "JavaScript logo",
+    name: "JavaScript",
+  },
+  {
+    src: MongoLogoBW,
+    hoverSrc: MongoLogoColor,
+    alt: "MongoDB logo",
+    name: "MongoDB",
+  },
+  { src: JavaLogoBW, hoverSrc: JavaLogoColor, alt: "Java logo", name: "Java" },
+  {
+    src: PythonLogoBW,
+    hoverSrc: PythonLogoColor,
+    alt: "Python logo",
+    name: "Python",
+  },
 ];
 
 export default function Skills() {
@@ -44,31 +76,34 @@ export default function Skills() {
       items: 1,
     },
   };
+
+  const handleMouseOver = (e) => {
+    e.target.src = e.target.dataset.hover;
+  };
+
+  const handleMouseOut = (e) => {
+    e.target.src = e.target.dataset.src;
+  };
+
   return (
-    <section className="skill" id="skills">
-      <Container>
-        <Row>
-          <Col>
-            <div className="skill-box">
-              <h2>Skills</h2>
-              <Paper elevation={3} style={{ padding: "2rem", margin: "2rem" }}>
-                <Carousel
-                  responsive={responsive}
-                  infinite={true}
-                  className="skill-slider"
-                >
-                  {logos.map((logo, index) => (
-                    <div className="item" key={index}>
-                      <img src={logo.src} alt={logo.alt} />
-                      <h5>{logo.name}</h5>
-                    </div>
-                  ))}
-                </Carousel>
-              </Paper>
-            </div>
-          </Col>
-        </Row>
-      </Container>
+    <section id="skills">
+      <h3>Skills</h3>
+      <Carousel responsive={responsive} infinite={true}>
+        {logos.map((logo, index) => (
+          <div>
+            <img
+              src={logo.src}
+              alt={logo.alt}
+              data-src={logo.src}
+              data-hover={logo.hoverSrc}
+              className="skill-logo"
+              onMouseOver={handleMouseOver}
+              onMouseOut={handleMouseOut}
+            />
+            <p className="skill-name">{logo.name}</p>
+          </div>
+        ))}
+      </Carousel>
     </section>
   );
 }

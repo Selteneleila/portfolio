@@ -1,26 +1,27 @@
+#skills {
+  width: 80%;
+  padding: 20px;
+}
 .skill-box {
   text-align: center;
 }
 
-.skill-box h2 {
-  margin-bottom: 20px;
+h3 {
+  margin-bottom: 4rem;
 }
 
-.skill-box p {
-  margin-bottom: 30px;
-}
-
-.skill-slider .item {
-  padding: 10px;
+p {
+  margin-top: 3rem;
   text-align: center;
 }
 
-.skill-slider .item img {
-  max-width: 80px;
-  margin-bottom: 10px;
+.skill-logo {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
 }
 
-.skill-slider .item h5 {
-  font-size: 16px;
-  margin: 0;
+.skill-logo:hover {
+  transform: scale(1.1);
 }
