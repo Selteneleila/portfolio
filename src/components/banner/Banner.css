@@ -1,26 +1,37 @@
-.container {
+.banner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   padding: 4rem;
 }
-.banner-img {
-  width: 25rem;
-  margin-right: 4rem;
+
+.text-container {
+  text-align: center;
+  margin-right: 1.7rem;
 }
+
+.banner-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 .text-container {
   text-align: left;
-  margin-left: 6rem;
 }
 h1 {
   font-size: 80px;
 }
 h2 {
-  font-size: 55px;
+  font-size: 50px;
 }
 .connect-btn {
-  color: #af98e8;
-  border-color: #af98e8;
+  color: #af98e8 !important;
+  border-color: #af98e8 !important;
 }
 
 .connect-btn:hover {
-  color: white;
-  border-color: white;
+  color: white !important;
+  border-color: white !important;
 }
