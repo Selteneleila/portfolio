@@ -1,16 +1,14 @@
 .navbar {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 20px 20px;
-}
-
-.logo-img {
-  height: 40px;
-  margin-left: 4rem;
-}
-.navbar-items {
-  margin-right: 4rem;
+  position: sticky;
+  top: 0;
+  background-color: #170d27;
+  width: max-content;
+  border-radius: 3rem;
+  margin: auto;
+  margin-top: 0.75rem;
+  z-index: 999;
 }
 
 .navbar-items a {
