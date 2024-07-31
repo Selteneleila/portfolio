@@ -10,13 +10,15 @@
   justify-content: center;
 }
 #skills,
-#banner {
+#about,
+#education,
+#projects {
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 ::-webkit-scrollbar {
-  width: 0.4rem;
+  width: 0.2rem;
 }
 
 ::-webkit-scrollbar-track {
