@@ -1,6 +1,6 @@
 import React from "react";
 import { Button, Grid } from "@mui/material";
-import MySvg from "../../assets/logo.svg";
+import MySvg from "../../assets/images/logo.svg";
 import "./banner.css";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 

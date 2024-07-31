@@ -1,25 +1,23 @@
 import React from "react";
-import ReactLogoBW from "../../assets/skillsLogos/bw/react.svg";
-import ReduxLogoBW from "../../assets/skillsLogos/bw/redux.svg";
-import CssLogoBW from "../../assets/skillsLogos/bw/css.svg";
-import JavaLogoBW from "../../assets/skillsLogos/bw/java.svg";
-import JsLogoBW from "../../assets/skillsLogos/bw/js.svg";
-import HtmlLogoBW from "../../assets/skillsLogos/bw/html.svg";
-import PythonLogoBW from "../../assets/skillsLogos/bw/python.svg";
-import MongoLogoBW from "../../assets/skillsLogos/bw/mongo.svg";
-import ReactLogoColor from "../../assets/skillsLogos/color/react.svg";
-import ReduxLogoColor from "../../assets/skillsLogos/color/redux.svg";
-import CssLogoColor from "../../assets/skillsLogos/color/css.svg";
-import JavaLogoColor from "../../assets/skillsLogos/color/java.svg";
-import JsLogoColor from "../../assets/skillsLogos/color/js.svg";
-import HtmlLogoColor from "../../assets/skillsLogos/color/html.svg";
-import PythonLogoColor from "../../assets/skillsLogos/color/python.svg";
-import MongoLogoColor from "../../assets/skillsLogos/color/mongo.svg";
+import ReactLogoBW from "../../assets/images/skillsLogo/bw/react.svg";
+import ReduxLogoBW from "../../assets/images/skillsLogo/bw/redux.svg";
+import CssLogoBW from "../../assets/images/skillsLogo/bw/css.svg";
+import JavaLogoBW from "../../assets/images/skillsLogo/bw/java.svg";
+import JsLogoBW from "../../assets/images/skillsLogo/bw/js.svg";
+import HtmlLogoBW from "../../assets/images/skillsLogo/bw/html.svg";
+import PythonLogoBW from "../../assets/images/skillsLogo/bw/python.svg";
+import MongoLogoBW from "../../assets/images/skillsLogo/bw/mongo.svg";
+import ReactLogoColor from "../../assets/images/skillsLogo/color/react.svg";
+import ReduxLogoColor from "../../assets/images/skillsLogo/color/redux.svg";
+import CssLogoColor from "../../assets/images/skillsLogo/color/css.svg";
+import JavaLogoColor from "../../assets/images/skillsLogo/color/java.svg";
+import JsLogoColor from "../../assets/images/skillsLogo/color/js.svg";
+import HtmlLogoColor from "../../assets/images/skillsLogo/color/html.svg";
+import PythonLogoColor from "../../assets/images/skillsLogo/color/python.svg";
+import MongoLogoColor from "../../assets/images/skillsLogo/color/mongo.svg";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import "./skills.css";
-import { Typography } from "@mui/material";
-import { Box } from "@mui/system";
 
 const logos = [
   {

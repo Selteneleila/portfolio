@@ -1,0 +1,17 @@
+.education-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 3rem;
+}
+.academic-container,
+.certificate-container {
+  background-color: #4f4789 !important;
+  border-radius: 1rem;
+
+  padding: 0.5rem;
+  height: 15rem;
+  max-width: 100%;
+}

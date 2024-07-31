@@ -1,0 +1,14 @@
+.academic-container {
+  margin-left: 4rem;
+  margin-right: 1rem;
+}
+.timeline-date {
+  color: #9eb7e5;
+}
+.timeline-dot {
+  background-color: #9eb7e5 !important;
+  margin: 0;
+}
+.timeline-content {
+  color: #fffded;
+}
