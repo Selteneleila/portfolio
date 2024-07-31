@@ -84,7 +84,7 @@ export default function Skills() {
   };
 
   return (
-    <section id="skills">
+    <section className="skills-container">
       <h3>Skills</h3>
       <Carousel responsive={responsive} infinite={true}>
         {logos.map((logo, index) => (
