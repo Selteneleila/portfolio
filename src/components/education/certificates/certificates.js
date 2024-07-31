@@ -1,4 +1,4 @@
-import { Box, Grid, Modal, Stack } from "@mui/material";
+import { Backdrop, Box, Grid, Modal, Stack } from "@mui/material";
 import Coursera from "../../../assets/images/certLogos/coursera.svg";
 import Udemy from "../../../assets/images/certLogos/udemy.svg";
 import Fcc from "../../../assets/images/certLogos/fcc.svg";
@@ -91,19 +91,24 @@ export default function Certificates() {
                           alignItems: "center",
                           justifyContent: "center",
                         }}
+                        slots={{ backdrop: Backdrop }}
+                        slotProps={{
+                          backdrop: {
+                            sx: {
+                              backgroundColor: "rgba(32, 19, 53, 0.1)",
+                            },
+                          },
+                        }}
                       >
                         <Box
                           sx={{
                             position: "relative",
-                            width: "80%",
-                            maxWidth: 800,
-                            bgcolor: "transparent",
-                            border: "none",
-                            boxShadow: "none",
-                            p: 0,
+                            maxWidth: "60%",
+                            bgcolor: "tranparent",
                             display: "flex",
                             justifyContent: "center",
                             alignItems: "center",
+                            border: "none",
                           }}
                         >
                           {selectedCert && (
@@ -115,6 +120,7 @@ export default function Certificates() {
                                 maxWidth: "100%",
                                 maxHeight: "80vh",
                                 objectFit: "contain",
+                                opacity: "5",
                               }}
                             />
                           )}
