@@ -1,0 +1,35 @@
+.certificate-container {
+  overflow-y: auto;
+  height: 100px;
+  margin-left: 1rem;
+  margin-right: 4rem;
+}
+
+.certificate-section {
+  padding: 10px 0;
+  border-radius: 3rem;
+}
+
+.cert-logo {
+  width: 50%;
+  height: auto;
+  margin-left: 3rem;
+  margin-top: 1rem;
+}
+
+.cert-img {
+  max-width: 60%;
+  max-height: 50%;
+  max-width: fit-content;
+  align-items: center;
+}
+.course-title {
+  text-align: left;
+  margin-left: 2.5rem;
+  margin-top: 1.6rem;
+  cursor: pointer;
+}
+.course-title:hover {
+  color: #9eb7e5;
+  font-size: 18px;
+}
