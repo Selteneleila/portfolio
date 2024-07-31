@@ -84,8 +84,8 @@ export default function Skills() {
   };
 
   return (
-    <section className="skills-container">
-      <h3>Skills</h3>
+    <div className="skills-container">
+      <h3 className="skills-container-title">Skills</h3>
       <Carousel responsive={responsive} infinite={true}>
         {logos.map((logo, index) => (
           <div>
@@ -102,6 +102,6 @@ export default function Skills() {
           </div>
         ))}
       </Carousel>
-    </section>
+    </div>
   );
 }
