@@ -1,0 +1,25 @@
+.project-container {
+  background-color: #4f4789 !important;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  max-height: fit-content;
+  width: 80rem;
+  margin: 1rem;
+}
+.tab-root {
+  margin-bottom: 0.75rem;
+}
+
+.tab-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.img-container img,
+.video-container video {
+  width: 25rem;
+  height: 15rem;
+  border-radius: 0.4rem;
+  margin: 0.55rem;
+  cursor: pointer;
+}
