@@ -1,0 +1,40 @@
+#footer-container {
+  padding: 2rem;
+  display: flex;
+  gap: 20rem;
+}
+.social-wrapper,
+.contact-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin: 0.5rem;
+}
+
+.social-container-title,
+.contact-container-title {
+  color: #beacec;
+  font-size: 20px;
+  text-align: left;
+}
+.contact-icon,
+.social-icon {
+  justify-content: start;
+  flex-direction: column;
+  color: #9eb7e5;
+}
+.contact-content,
+.link-content {
+  justify-content: end;
+}
+.contact-content p,
+.link-content a {
+  margin: 0;
+}
+.link-content {
+  text-decoration: none !important;
+  color: #fffded !important;
+}
+.link-content:hover {
+  color: #9eb7e5 !important;
+}
