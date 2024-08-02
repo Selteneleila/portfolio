@@ -1,21 +1,21 @@
 .navbar {
   display: flex;
-  justify-content: center; /* Centering items horizontally */
+  justify-content: center;
   padding: 20px;
   position: sticky;
   top: 0;
   background-color: #170d27;
+  border-radius: 2rem;
   width: 100%;
-  max-width: fit-content; /* Adjust width as needed */
-  border-radius: 3rem;
+  max-width: fit-content;
   margin: auto;
   z-index: 999;
-  box-sizing: border-box; /* Ensures padding doesn't affect total width */
+  box-sizing: border-box;
 }
 
 .navbar-items {
   display: flex;
-  gap: 15px; /* Added gap for spacing between items */
+  gap: 15px;
 }
 
 .navbar-items a {
@@ -40,18 +40,18 @@
 
 @media (max-width: 768px) {
   .navbar-items {
-    display: none; /* Hide items by default on small screens */
-    flex-direction: column; /* Stack items vertically */
-    width: 100%; /* Full width for the dropdown */
-    background-color: #170d27; /* Match background color */
-    border-radius: 0 0 3rem 3rem; /* Rounded bottom corners */
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #170d27;
+    border-radius: 0 0 3rem 3rem;
   }
 
   .navbar-items.active {
-    display: flex; /* Show items when active */
+    display: flex;
   }
 
   .navbar-toggle {
-    display: block; /* Show the toggle button on small screens */
+    display: block;
   }
 }
