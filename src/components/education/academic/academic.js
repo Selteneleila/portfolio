@@ -9,7 +9,7 @@ import {
   TimelineContent,
   timelineOppositeContentClasses,
 } from "@mui/lab";
-import "./academic.css";
+import "./Academic.css";
 
 const timelineData = [
   {

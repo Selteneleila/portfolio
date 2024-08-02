@@ -8,7 +8,7 @@ import JsUdemy from "../../../assets/images/certificates/jsCertUdemy.jpg";
 import JsFcc from "../../../assets/images/certificates/JsFcc.jpg";
 import WebFcc from "../../../assets/images/certificates/responsiveWebFcc.jpg";
 import WebCoursera from "../../../assets/images/certificates/webCoursera.jpg";
-import "./certificates.css";
+import "./Certificates.css";
 import React, { useState } from "react";
 
 const certificatesData = [

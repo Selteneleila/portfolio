@@ -1,7 +1,9 @@
-#footer-container {
-  padding: 2rem;
+.footer-container {
+  padding: 0.55rem;
   display: flex;
-  gap: 20rem;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #170d27;
 }
 .social-wrapper,
 .contact-wrapper {

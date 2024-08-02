@@ -17,7 +17,7 @@ import PythonLogoColor from "../../assets/images/skillsLogo/color/python.svg";
 import MongoLogoColor from "../../assets/images/skillsLogo/color/mongo.svg";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import "./skills.css";
+import "./Skills.css";
 
 const logos = [
   {
@@ -88,7 +88,7 @@ export default function Skills() {
       <h3 className="skills-container-title">Skills</h3>
       <Carousel responsive={responsive} infinite={true}>
         {logos.map((logo, index) => (
-          <div>
+          <div className="carousel-item">
             <img
               src={logo.src}
               alt={logo.alt}

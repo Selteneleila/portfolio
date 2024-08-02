@@ -1,17 +1,15 @@
-#skills {
-  width: 80%;
+.skills-container {
   padding: 2rem;
 }
-
-.skill-box {
+.skills-container-title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.carousel-item {
   text-align: center;
 }
 
-.skills-container-title {
-  margin-bottom: 3rem;
-}
-
-p {
+.skill-name {
   margin-top: 3rem;
   text-align: center;
 }

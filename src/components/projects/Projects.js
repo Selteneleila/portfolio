@@ -1,12 +1,11 @@
 import React from "react";
 import { Tab, Tabs } from "@mui/material";
-import ReactPlayer from "react-player";
 import WasteWatcher from "../../assets/images/projectImages/wasteWatcher.png";
 import LudUp from "../../assets/images/projectImages/ludup.png";
 import LudUpPDF from "../../assets/pdf/ludUp.pdf";
 import WasteWatcherPDF from "../../assets/pdf/wasteWatcher.pdf";
 import CreditScoreDemo from "../../assets/videos/credit-score-demo.mp4";
-import "./project.css";
+import "./Project.css";
 
 export default function Projects() {
   const [value, setValue] = React.useState(0);

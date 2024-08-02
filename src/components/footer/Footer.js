@@ -4,7 +4,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
 import HomeIcon from "@mui/icons-material/Home";
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
-import "./footer.css";
+import "./Footer.css";
 
 const socialNetworkData = [
   {
@@ -19,10 +19,6 @@ const socialNetworkData = [
 
 const contactData = [
   {
-    icon: <PhoneAndroidIcon />,
-    content: "+372 5456 1855",
-  },
-  {
     icon: <HomeIcon />,
     content: "Tallinn, Estonia",
   },
@@ -34,7 +30,7 @@ const contactData = [
 
 export default function Footer() {
   return (
-    <div id="footer-container">
+    <div className="footer-container">
       <div className="social-container">
         <h3 className="social-container-title">Connect with Me</h3>
         {socialNetworkData.map((social, index) => (
