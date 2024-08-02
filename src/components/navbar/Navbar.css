@@ -1,24 +1,57 @@
 .navbar {
   display: flex;
-  padding: 20px 20px;
+  justify-content: center; /* Centering items horizontally */
+  padding: 20px;
   position: sticky;
   top: 0;
   background-color: #170d27;
-  width: max-content;
+  width: 100%;
+  max-width: fit-content; /* Adjust width as needed */
   border-radius: 3rem;
   margin: auto;
-  margin-top: 0.75rem;
   z-index: 999;
+  box-sizing: border-box; /* Ensures padding doesn't affect total width */
+}
+
+.navbar-items {
+  display: flex;
+  gap: 15px; /* Added gap for spacing between items */
 }
 
 .navbar-items a {
   color: #f9f0ff;
   text-decoration: none;
-  margin: 0 15px;
   font-size: 18px;
 }
 
 .navbar-items a:hover {
-  text-decoration: none;
   color: #beacec;
+}
+
+.navbar-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #f9f0ff;
+  font-size: 24px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+@media (max-width: 768px) {
+  .navbar-items {
+    display: none; /* Hide items by default on small screens */
+    flex-direction: column; /* Stack items vertically */
+    width: 100%; /* Full width for the dropdown */
+    background-color: #170d27; /* Match background color */
+    border-radius: 0 0 3rem 3rem; /* Rounded bottom corners */
+  }
+
+  .navbar-items.active {
+    display: flex; /* Show items when active */
+  }
+
+  .navbar-toggle {
+    display: block; /* Show the toggle button on small screens */
+  }
 }
