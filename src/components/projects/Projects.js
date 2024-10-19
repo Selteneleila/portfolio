@@ -50,7 +50,7 @@ export default function Projects() {
         {value === 0 &&
           videos.map((video, index) => (
             <div className="video-container">
-              <video controls>
+              <video controls className="video-player">
                 <source src={video.src} type="video/mp4" />
               </video>
               <h5>{video.name}</h5>

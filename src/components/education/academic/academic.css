@@ -1,6 +1,14 @@
+#academic-container {
+  width: 50%;
+}
 .academic-container {
-  margin-left: 4rem;
-  margin-right: 1rem;
+  overflow: hidden;
+  background-color: #4f4789;
+  border-radius: 1rem;
+  min-height: 15rem;
+}
+.academic-container-title {
+  font-size: 15px;
 }
 .timeline-date {
   color: #9eb7e5;
@@ -11,4 +19,39 @@
 }
 .timeline-content {
   color: #fffded;
+}
+
+@media (max-width: 800px) {
+  #academic-container {
+    width: 100%;
+  }
+  .academic-container {
+    overflow-y: auto;
+  }
+  .academic-container-title {
+    font-size: 14px;
+  }
+  .timeline-container {
+    display: inline-block;
+  }
+
+  .academic-container::-webkit-scrollbar-thumb {
+    background-color: #130e3c;
+    border-radius: 4px;
+  }
+}
+@media (max-width: 800px) {
+  .academic-container {
+    overflow-y: auto;
+    width: 100%;
+  }
+
+  .timeline-container {
+    display: inline-block;
+  }
+
+  .academic-container::-webkit-scrollbar-thumb {
+    background-color: #130e3c;
+    border-radius: 4px;
+  }
 }

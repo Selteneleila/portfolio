@@ -1,20 +1,26 @@
+#certificate-container {
+  width: 50%;
+}
 .certificate-container {
+  background-color: #4f4789;
+  border-radius: 1rem;
+  height: 15rem;
+  padding-bottom: 2.3rem;
   overflow-y: auto;
-  height: 100px;
-  margin-left: 1rem;
-  margin-right: 4rem;
 }
 
-.certificate-section {
-  padding: 10px 0;
-  border-radius: 3rem;
+.certificate-container-title {
+  font-size: 15px;
+}
+p {
+  font-size: 15px;
 }
 
 .cert-logo {
+  margin-top: 1rem;
   width: 50%;
   height: auto;
   margin-left: 3rem;
-  margin-top: 1rem;
 }
 
 .cert-img {
@@ -32,4 +38,18 @@
 .course-title:hover {
   color: #9eb7e5;
   font-size: 18px;
+}
+
+@media (max-width: 800px) {
+  #certificate-container {
+    width: 100%;
+  }
+  .certificate-container {
+    overflow-y: auto;
+  }
+
+  .certificate-container::-webkit-scrollbar-thumb {
+    background-color: #130e3c;
+    border-radius: 4px;
+  }
 }

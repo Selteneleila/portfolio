@@ -1,4 +1,11 @@
-import { Backdrop, Box, Grid, Modal, Stack } from "@mui/material";
+import {
+  Backdrop,
+  Box,
+  Grid,
+  Modal,
+  Stack,
+  useMediaQuery,
+} from "@mui/material";
 import Coursera from "../../../assets/images/certLogos/coursera.svg";
 import Udemy from "../../../assets/images/certLogos/udemy.svg";
 import Fcc from "../../../assets/images/certLogos/fcc.svg";
@@ -59,9 +66,10 @@ export default function Certificates() {
     setOpen(false);
     setSelectedCert(null);
   };
+
   return (
-    <>
-      <h4>Certificates</h4>
+    <div id="certificate-container">
+      <h4 className="certificate-container-title">Certificates</h4>
       <div className="certificate-container">
         <Grid container spacing={2}>
           {certificatesData.map((cert, index) => (
@@ -134,6 +142,6 @@ export default function Certificates() {
           ))}
         </Grid>
       </div>
-    </>
+    </div>
   );
 }

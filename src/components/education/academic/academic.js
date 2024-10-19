@@ -27,8 +27,8 @@ const timelineData = [
 
 export default function Academic() {
   return (
-    <>
-      <h4>Academic</h4>
+    <div id="academic-container">
+      <h4 className="academic-container-title">Academic</h4>
       <div className="academic-container">
         <Timeline
           sx={{
@@ -56,6 +56,6 @@ export default function Academic() {
           ))}
         </Timeline>
       </div>
-    </>
+    </div>
   );
 }

@@ -66,11 +66,11 @@ export default function Skills() {
       items: 3,
     },
     tablet: {
-      breakpoint: { max: 1024, min: 464 },
+      breakpoint: { max: 1024, min: 450 },
       items: 2,
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max: 450, min: 0 },
       items: 1,
     },
   };
@@ -85,7 +85,7 @@ export default function Skills() {
 
   return (
     <div className="skills-container">
-      <h3 className="skills-container-title">Skills</h3>
+      <h4 className="skills-container-title">Skills</h4>
       <Carousel responsive={responsive} infinite={true}>
         {logos.map((logo, index) => (
           <div className="carousel-item">
